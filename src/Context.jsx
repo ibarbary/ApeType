@@ -32,7 +32,7 @@ function Context({ children }) {
     window.addEventListener("resize", reset);
 
     return () => window.removeEventListener("resize", reset);
-  }, [chosenTime, timeFinished]);
+  }, [timeFinished]);
 
   useEffect(() => {
     if (time > 0 && startedTyping) {
